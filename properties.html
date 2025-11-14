@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Properties | Princess Realty</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Princess <span>Realty</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#properties" class="active">Properties</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#partners">Partners</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Properties Page Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Browse All Properties</h1>
+                <p>Find your perfect home from our extensive collection of premium properties</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Filter Section -->
+    <section id="properties-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category-filter">Property Type</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">All Types</option>
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="condo">Condo</option>
+                        <option value="villa">Villa</option>
+                        <option value="commercial">Commercial</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="location-filter">Location</label>
+                    <select id="location-filter" class="filter-select">
+                        <option value="all">All Locations</option>
+                        <option value="beverly-hills">Beverly Hills</option>
+                        <option value="downtown-la">Downtown LA</option>
+                        <option value="pasadena">Pasadena</option>
+                        <option value="santa-monica">Santa Monica</option>
+                        <option value="malibu">Malibu</option>
+                        <option value="hollywood">Hollywood</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter">Price Range</label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="all">Any Price</option>
+                        <option value="0-500000">Under $500,000</option>
+                        <option value="500000-1000000">$500,000 - $1,000,000</option>
+                        <option value="1000000-2000000">$1,000,000 - $2,000,000</option>
+                        <option value="2000000+">Over $2,000,000</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="bedrooms-filter">Bedrooms</label>
+                    <select id="bedrooms-filter" class="filter-select">
+                        <option value="all">Any</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                        <option value="5">5+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="status-filter">Status</label>
+                    <select id="status-filter" class="filter-select">
+                        <option value="all">All Status</option>
+                        <option value="new">New Listing</option>
+                        <option value="sold">Sold</option>
+                        <option value="pending">Pending</option>
+                    </select>
+                </div>
+                
+                <button id="reset-filters" class="btn btn-accent">Reset Filters</button>
+            </div>
+            
+            <div class="filter-results">
+                <p id="results-count">Showing <span id="properties-count">12</span> properties</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Grid Section -->
+    <section id="properties-grid-section">
+        <div class="container">
+            <div class="properties-grid" id="properties-container">
+                <!-- Properties will be populated by JavaScript -->
+            </div>
+            
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated on New Properties</h2>
+                <p>Subscribe to our newsletter to receive the latest property listings directly in your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-accent">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Princess Realty</h3>
+                    <p>Your trusted partner for all real estate needs. Professional, reliable, and dedicated to your success.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Property Buying</a></li>
+                        <li><a href="#">Property Selling</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                        <li><a href="#">Investment Consulting</a></li>
+                        <li><a href="#">Property Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, LA</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> princess@realestate.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Princess Tolentino Tuazon Real Estate. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/properties.js"></script>
+    <script>
+        // Mobile Navigation Toggle (same as index.html)
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for subscribing to our newsletter!');
+                newsletterForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
